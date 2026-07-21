@@ -3,153 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Space Oddity — a flexbox gym</title>
+  <title>Space Oddity: flexbox exercises</title>
   <link rel="stylesheet" href="shared.css">
   <style>
-    /* This landing page is itself built with flexbox.
-       (Eat your own dog food.) */
     main {
-      max-width: 720px;
+      max-width: 640px;
       margin: 0 auto;
       padding: 2rem;
     }
-    .intro {
-      margin-bottom: 2rem;
-    }
-    .intro h1 { margin: 0 0 0.5rem; font-size: 2rem; }
-    .intro p { color: #c4c4dc; max-width: 55ch; }
-    .exercise-list {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    .card {
+    h1 { margin: 0 0 0.5rem; }
+    .lead { color: #444; margin: 0 0 2rem; }
+    .list { display: flex; flex-direction: column; gap: 0.75rem; }
+    .row {
       display: flex;
       align-items: center;
-      gap: 1.25rem;
-      padding: 1.25rem;
-      border: 1px solid #2a2a3c;
-      border-radius: 10px;
-      background: #171726;
+      gap: 1rem;
+      padding: 1rem;
+      border: 1px solid #e0e0e2;
+      border-radius: 6px;
+      background: #fff;
       color: inherit;
       text-decoration: none;
-      transition: border-color 0.15s, transform 0.15s;
     }
-    .card:hover {
-      border-color: #8ecbff;
-      transform: translateY(-2px);
-    }
-    .num {
-      flex-shrink: 0;
-      width: 3rem;
-      height: 3rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      background: #22223a;
-      font-weight: 700;
-      font-size: 1.1rem;
-      color: #8ecbff;
-    }
-    .card-body { flex-grow: 1; }
-    .card-body h2 { margin: 0 0 0.2rem; font-size: 1.15rem; }
-    .card-body p { margin: 0; color: #a4a4c8; font-size: 0.9rem; }
-    .badge {
-      flex-shrink: 0;
-      font-size: 0.7rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 0.3rem 0.6rem;
-      border-radius: 999px;
-    }
-    .badge.class { background: #1e3a2e; color: #8ff0c0; }
-    .badge.home { background: #3a2e1e; color: #f0d08f; }
-    footer {
-      margin-top: 2.5rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid #2a2a3c;
-      color: #8a8ab0;
-      font-size: 0.9rem;
-    }
-    footer a { color: #8ecbff; }
+    .row:hover { border-color: #2563eb; }
+    .num { color: #888; font-variant-numeric: tabular-nums; }
+    .row .body { flex: 1; }
+    .row .body strong { display: block; }
+    .row .body span { color: #666; font-size: 0.9rem; }
+    .tag { font-size: 0.8rem; color: #666; }
   </style>
 </head>
 <body>
   <main>
-    <div class="intro">
-      <h1>Space Oddity 🚀</h1>
-      <p>A flexbox gym. Seven small layout jobs, in order. Open each one with Live Server and refresh as you work. This page you're reading is itself built with flexbox.</p>
-    </div>
+    <h1>Space Oddity</h1>
+    <p class="lead">Seven flexbox exercises. Do them in order. Open each with Live Server.</p>
 
-    <div class="exercise-list">
-      <a class="card" href="01-ground-control/index.html">
+    <div class="list">
+      <a class="row" href="01-navbar/index.html">
         <span class="num">01</span>
-        <span class="card-body">
-          <h2>Ground Control</h2>
-          <p>Fix four bugs and watch the panel snap together.</p>
-        </span>
-        <span class="badge class">In class</span>
+        <span class="body"><strong>Navbar</strong><span>Fix the CSS</span></span>
+        <span class="tag">in class</span>
       </a>
-
-      <a class="card" href="02-comic-strip/index.html">
+      <a class="row" href="02-filter-bar/index.html">
         <span class="num">02</span>
-        <span class="card-body">
-          <h2>Comic Strip</h2>
-          <p>The panels are scrambled. Make the joke read right.</p>
-        </span>
-        <span class="badge class">In class</span>
+        <span class="body"><strong>Filter bar</strong><span>Fix the CSS</span></span>
+        <span class="tag">in class</span>
       </a>
-
-      <a class="card" href="03-gallery-wall/index.html">
+      <a class="row" href="03-gallery/index.html">
         <span class="num">03</span>
-        <span class="card-body">
-          <h2>Gallery Wall</h2>
-          <p>Hang a painting dead center. Yes, <em>that</em> div.</p>
-        </span>
-        <span class="badge class">In class</span>
+        <span class="body"><strong>Gallery</strong><span>Write the CSS</span></span>
+        <span class="tag">in class</span>
       </a>
-
-      <a class="card" href="04-sticker-sheet/index.html">
+      <a class="row" href="04-columns/index.html">
         <span class="num">04</span>
-        <span class="card-body">
-          <h2>Sticker Sheet</h2>
-          <p>Make it wrap, make it breathe, feed the hungry banner.</p>
-        </span>
-        <span class="badge class">In class</span>
+        <span class="body"><strong>Columns</strong><span>Write the CSS</span></span>
+        <span class="tag">in class</span>
       </a>
-
-      <a class="card" href="05-mixtape-shelf/index.html">
+      <a class="row" href="05-profile-list/index.html">
         <span class="num">05</span>
-        <span class="card-body">
-          <h2>Mixtape Shelf</h2>
-          <p>The CSS is written. You write the HTML to match it.</p>
-        </span>
-        <span class="badge home">Homework</span>
+        <span class="body"><strong>Profile list</strong><span>Write the HTML</span></span>
+        <span class="tag">homework</span>
       </a>
-
-      <a class="card" href="06-boarding-pass/index.html">
+      <a class="row" href="06-card/index.html">
         <span class="num">06</span>
-        <span class="card-body">
-          <h2>Boarding Pass</h2>
-          <p>One picture, no starter code. Build the whole thing.</p>
-        </span>
-        <span class="badge home">Homework</span>
+        <span class="body"><strong>Card</strong><span>Build both from a screenshot</span></span>
+        <span class="tag">homework</span>
       </a>
-
-      <a class="card" href="07-katas/index.html">
+      <a class="row" href="07-drills/index.html">
         <span class="num">07</span>
-        <span class="card-body">
-          <h2>Katas</h2>
-          <p>Three tiny drills: navbar, centered card, photo row.</p>
-        </span>
-        <span class="badge home">Homework</span>
+        <span class="body"><strong>Drills</strong><span>Three small ones</span></span>
+        <span class="tag">homework</span>
       </a>
     </div>
-
-    <footer>
-      <p><strong>Stuck?</strong> Read the error out loud → rubber-duck it → check the docs → ask a neighbor → ask me. And <a href="https://flexboxfroggy.com">Flexbox Froggy</a> levels 1–13 cover everything in here.</p>
-    </footer>
   </main>
 </body>
 </html>

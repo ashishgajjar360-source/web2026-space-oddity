@@ -1,0 +1,20 @@
+.features {
+  /* TODO: flex row with a gap */
+}
+
+.feature {
+  /* TODO: each column takes an equal share of the width */
+  padding: 1.5rem;
+  border: 1px solid #e0e0e2;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.feature h2 {
+  margin: 0 0 0.5rem;
+}
+
+.feature p {
+  margin: 0;
+  color: #555;
+}

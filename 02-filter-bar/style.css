@@ -1,0 +1,19 @@
+.filters {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.chip {
+  padding: 0.5rem 1rem;
+  border: 1px solid #d0d0d4;
+  border-radius: 999px;
+  background: #fff;
+  font: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.chip:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}

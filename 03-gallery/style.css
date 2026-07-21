@@ -1,0 +1,42 @@
+.featured {
+  /* TODO: flex container, full viewport height, center the figure
+     across and down */
+  min-height: 100vh;
+  background: #ece7dd;
+  padding: 2rem;
+}
+
+.featured figure {
+  margin: 0;
+  max-width: 420px;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.thumbs {
+  /* TODO: flex row, even gap, thumbnails share the width */
+  background: #ded7c9;
+  padding: 1.5rem 2rem;
+}
+
+.thumbs figure {
+  margin: 0;
+  max-width: 220px;
+  background: #fff;
+  padding: 0.6rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+figure img {
+  /* TODO: keep images inside their frames */
+  height: auto;
+  display: block;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  text-align: center;
+  color: #555;
+  font-size: 0.85rem;
+}

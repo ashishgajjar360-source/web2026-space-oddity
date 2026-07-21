@@ -1,0 +1,21 @@
+.navbar {
+  display: block;
+  justify-content: left;
+  padding: 1rem 2rem;
+  background: #1b1b2b;
+  border-radius: 6px;
+}
+
+.links {
+  gap: 1.5rem;
+}
+
+.logo {
+  color: #fff;
+  font-weight: 700;
+}
+
+.links a {
+  color: #9db4ff;
+  text-decoration: none;
+}

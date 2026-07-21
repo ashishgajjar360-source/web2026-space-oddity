@@ -1,0 +1,53 @@
+/* This file is finished. Do not change it. Read it as a spec and
+   write the HTML in index.html to match.
+
+   Expected structure:
+     a container with class "list"
+       several rows with class "person", each holding:
+         an element with class "avatar"
+         an element with class "info", holding:
+           an element with class "name"
+           an element with class "role"
+*/
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 400px;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e0e0e2;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.avatar {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #c7d2fe;
+}
+
+.person:nth-child(2n) .avatar { background: #fecdd3; }
+.person:nth-child(3n) .avatar { background: #bbf7d0; }
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.role {
+  color: #666;
+  font-size: 0.9rem;
+}
