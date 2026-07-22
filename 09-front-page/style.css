@@ -1,26 +1,41 @@
 .paper {
   /* TODO: stack masthead, stories, footer down the page */
+  background: #fff;
   max-width: 760px;
+  padding: 2rem;
   margin: 0 auto;
   gap: 1.5rem;
+  border-radius: 8px;
 }
 
 .masthead {
   /* TODO: title on the left, issue on the right, on one row, centered */
+  display: flex;
+  justify-content: space-between;
   padding-bottom: 1rem;
   border-bottom: 3px solid #1a1a1a;
 }
 
 .stories {
   /* TODO: lead and rail side by side, with a gap */
+  display: flex;
+  gap: 1.5rem;
 }
 
 .lead {
   /* TODO: the lead takes about twice the width of the rail */
+  max-width: 500px;
+  margin: 20px 0px 20px 20px;
 }
 
 .rail {
   /* TODO: stack the two small stories with a gap */
+  display: flex;
+  margin: 20px 20px 20px 0px;
+  max-width: 270px;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 8px;
 }
 
 /* Styling below is done. Leave it. */
@@ -59,6 +74,8 @@
 
 .colophon {
   /* TODO: same left/right split as the masthead */
+  display: flex;
+  justify-content: space-between;
   padding-top: 1rem;
   border-top: 1px solid #e0e0e2;
   color: #666;
