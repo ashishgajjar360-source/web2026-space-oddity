@@ -9,7 +9,7 @@
 
 .links {
   display: flex;
-  gap: 5rem;
+  gap: rem;
 }
 
 .logo {

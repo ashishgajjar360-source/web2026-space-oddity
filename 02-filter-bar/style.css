@@ -1,9 +1,11 @@
 .filters {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .chip {
+  align-items: center;
   padding: 0.5rem 1rem;
   border: 1px solid #d0d0d4;
   border-radius: 999px;
