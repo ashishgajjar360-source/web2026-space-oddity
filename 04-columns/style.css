@@ -1,8 +1,14 @@
 .features {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
   /* TODO: flex row with a gap */
 }
 
 .feature {
+  max-width: 300px;
   /* TODO: each column takes an equal share of the width */
   padding: 1.5rem;
   border: 1px solid #e0e0e2;
@@ -16,5 +22,6 @@
 
 .feature p {
   margin: 0;
+  font-style: bold;
   color: #555;
 }
