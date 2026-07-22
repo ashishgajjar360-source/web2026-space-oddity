@@ -1,8 +1,9 @@
 # 07: Drills
 
-Three small patterns you will reach for constantly. Write the CSS in `drills.css`, one section per drill.
+Three short patterns that come up constantly. Write the CSS in `drills.css`, which has one section per drill.
 
-- **a. Toolbar.** Title on the left, button pushed to the far right, one row, vertically centered. `display: flex`, `justify-content: space-between`, `align-items: center`.
-- **b. Search row.** Input and button on one row, the input growing to fill the leftover space while the button stays its own size. `display: flex`, `gap`, and `flex: 1` on the input.
-- **c. Centered box.** Center the box in the area, across and down. `display: flex`, `justify-content: center`, `align-items: center`, and the area already has a height.
+- **a. Toolbar.** Place a title and a button on one row, with the title at the left edge and the button pushed to the right, both vertically centered.
+- **b. Search row.** Place an input and a button on one row, where the input grows to fill the leftover space while the button stays its own natural size.
+- **c. Centered box.** Center the box within its area, both across and down. The area already has a height set for you.
 
+Properties: `display: flex`, `justify-content`, `align-items`, `gap`, `flex`.

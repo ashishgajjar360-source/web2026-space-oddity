@@ -1,10 +1,10 @@
 # 04: Columns
 
-Write the CSS in `style.css`. The HTML is done. Match `goal.png`.
+Write the CSS in `style.css`. The HTML is done, so match `goal.png`.
 
-Three feature blocks should sit side by side as equal-width columns with a gap between them. This is the shape of most pricing tables and feature sections.
+The three feature blocks should sit side by side as equal-width columns with a gap between them, which is the shape you see in pricing tables and feature sections.
 
-- `.features` is a flex row with a `gap`.
-- `.feature` gets `flex: 1` so the three columns share the width equally, whatever the text length.
+- `.features` is a flex row with a gap between its children.
+- `.feature` is given `flex: 1` so that the three columns share the width equally no matter how long their text is.
 
 Properties: `display: flex`, `gap`, `flex: 1`.

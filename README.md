@@ -1,12 +1,8 @@
 # web2026: Space Oddity
 
-Flexboxes are going to be one of the biggest superpowers in your web design toolkit. You might already be familiar with it because of Figma's autolayout, which has the same mental models.
+This repo is a set of exercises for learning CSS flexbox, and if you have used Figma's autolayout then the mental model is already familiar. Each exercise lives in its own folder, and you should read its README before you touch the code. Some exercises ask you to change the HTML and some ask you to change the CSS, and some even include a `goal.png` that you can check your result against.
 
-This repo has a set of exercises designed to help you understand flexboxes. Each exercise is in a separate folder of its own. Please read the README for each exercise before you touch the code.
-
-In some cases you will modify the HTML, in some cases the CSS. Some exercises also have a `goal.png` to check against.
-
-**As you do each exercise, remember to commit your work!**
+Remember to commit your work as you finish each exercise!
 
 ## Setup
 
@@ -14,7 +10,7 @@ In some cases you will modify the HTML, in some cases the CSS. Some exercises al
 2. Open the folder in VS Code.
 3. Right-click `index.html` and choose "Open with Live Server".
 
-Start from `index.html`. It links every exercise!
+Open `index.html` to jump to any exercise.
 
 ## Exercises
 
@@ -30,7 +26,7 @@ Start from `index.html`. It links every exercise!
 | 08 | Article | Write the CSS (editorial page) |
 | 09 | Front page | Write the CSS (a whole page in flexbox) |
 
-**Extreme bonus round**: Can you create a COMMON menu that will help people navigate between each exercise, in each exercise's page? 
+**Bonus Round:** add a shared menu to every exercise page so you can move between them. Style it in a way that you like. Since this is a common item, where do you think styles for this would go?
 
 ## References
 
